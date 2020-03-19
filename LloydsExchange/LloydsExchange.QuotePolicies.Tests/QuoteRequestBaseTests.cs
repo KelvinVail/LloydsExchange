@@ -3,12 +3,12 @@
     using RequestRouter;
     using Xunit;
 
-    public class RequestQuoteTests : RequestQuote
+    public class QuoteRequestBaseTests : QuoteRequestBase
     {
         [Fact]
         public void RequestQuoteInheritsRequest()
         {
-            Assert.True(typeof(RequestBase).IsAssignableFrom(typeof(RequestQuote)));
+            Assert.True(typeof(StandardRequestBase).IsAssignableFrom(typeof(QuoteRequestBase)));
         }
     }
 }

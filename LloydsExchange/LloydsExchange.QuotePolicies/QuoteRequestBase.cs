@@ -2,7 +2,7 @@
 {
     using RequestRouter;
 
-    public abstract class RequestQuote : RequestBase
+    public abstract class QuoteRequestBase : StandardRequestBase
     {
     }
 }
