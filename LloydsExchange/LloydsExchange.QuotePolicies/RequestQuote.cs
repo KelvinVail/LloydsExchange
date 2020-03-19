@@ -1,4 +1,4 @@
-﻿namespace Lloyds.Exchange.Quotes
+﻿namespace LloydsExchange.QuotePolicies
 {
     using RequestRouter;
 

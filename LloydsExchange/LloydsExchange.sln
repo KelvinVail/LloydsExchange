@@ -3,9 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lloyds.Exchange.Quotes", "Lloyds.Exchange.Quotes\Lloyds.Exchange.Quotes.csproj", "{BB0E198A-C9A7-4D21-BD4E-318E6E1B5DB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lloyds.Exchange.Quotes", "Lloyds.Exchange.Quotes\Lloyds.Exchange.Quotes.csproj", "{BB0E198A-C9A7-4D21-BD4E-318E6E1B5DB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LloydsExchange.Quotes.Tests", "LloydsExchange.Quotes.Tests\LloydsExchange.Quotes.Tests.csproj", "{D23E5EBC-C7FE-4EEA-8433-0E1C76893E52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LloydsExchange.Quotes.Tests", "LloydsExchange.Quotes.Tests\LloydsExchange.Quotes.Tests.csproj", "{D23E5EBC-C7FE-4EEA-8433-0E1C76893E52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LloydsExchange.QuotePolicies", "LloydsExchange.QuotePolicies\LloydsExchange.QuotePolicies.csproj", "{D9EB8A04-797A-454C-B812-DD7728604091}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LloydsExchange.QuotePolicies.Tests", "LloydsExchange.QuotePolicies.Tests\LloydsExchange.QuotePolicies.Tests.csproj", "{0C037804-CC6D-4AAB-9160-677DAAE04BE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DA45E2FA-7B04-4F86-BF93-A302D33FCFC0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +30,14 @@ Global
 		{D23E5EBC-C7FE-4EEA-8433-0E1C76893E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D23E5EBC-C7FE-4EEA-8433-0E1C76893E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D23E5EBC-C7FE-4EEA-8433-0E1C76893E52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9EB8A04-797A-454C-B812-DD7728604091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9EB8A04-797A-454C-B812-DD7728604091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9EB8A04-797A-454C-B812-DD7728604091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9EB8A04-797A-454C-B812-DD7728604091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C037804-CC6D-4AAB-9160-677DAAE04BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C037804-CC6D-4AAB-9160-677DAAE04BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C037804-CC6D-4AAB-9160-677DAAE04BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C037804-CC6D-4AAB-9160-677DAAE04BE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

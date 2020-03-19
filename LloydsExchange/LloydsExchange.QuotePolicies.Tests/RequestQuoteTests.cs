@@ -1,6 +1,5 @@
-﻿namespace LloydsExchange.Quotes.Tests
+﻿namespace LloydsExchange.QuotePolicies.Tests
 {
-    using Lloyds.Exchange.Quotes;
     using RequestRouter;
     using Xunit;
 
