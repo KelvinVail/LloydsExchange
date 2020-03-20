@@ -43,7 +43,7 @@
         }
 
         [Fact]
-        public void QuoteProviderThrowsInResponseIsNotQuoteDeclinedOrReferral()
+        public void QuoteProviderThrowsIfResponseIsNotQuoteDeclinedOrReferral()
         {
             var quoteRequest = new QuoteRequestStub { ForcedResponse = new InvalidResponseStub() };
             var ex = Assert.Throws<InvalidCastException>(() => this.quoteProvider.GetQuote(quoteRequest));

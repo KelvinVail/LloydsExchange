@@ -1,4 +1,6 @@
-﻿namespace LloydsExchange.QuotePolicies.Tests
+﻿using LloydsExchange.QuotePolicies.Tests.TestDoubles;
+
+namespace LloydsExchange.QuotePolicies.Tests
 {
     using System;
     using RequestRouter;
@@ -126,6 +128,33 @@
             this.ExpiryDateUtc = DateTime.Today.AddDays(-1);
             var ex = Assert.Throws<ArgumentException>(this.Validate);
             Assert.Equal($"{nameof(this.ExpiryDateUtc)} should not be in the past.", ex.Message);
+        }
+
+        [Fact]
+        public void QuoteIsExpiredIfExpiryDateIsInThePast()
+        {
+            this.ExpiryDateUtc = DateTime.Today.AddDays(-1);
+            Assert.True(this.Expired);
+        }
+
+        [Fact]
+        public void QuoteIsNotExpiredIfTheExpiryDateIsToday()
+        {
+            this.ExpiryDateUtc = DateTime.Today;
+            Assert.False(this.Expired);
+        }
+
+        [Fact]
+        public void QuoteIsNotExpiredIfTheExpiryDateIsInTheFuture()
+        {
+            this.ExpiryDateUtc = DateTime.Today.AddDays(1);
+            Assert.False(this.Expired);
+        }
+
+        [Fact]
+        public void QuoteCanBeRejected()
+        {
+            this.Reject();
         }
     }
 }

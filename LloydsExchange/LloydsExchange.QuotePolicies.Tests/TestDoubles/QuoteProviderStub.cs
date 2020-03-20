@@ -4,13 +4,10 @@
 
     public class QuoteProviderStub : QuoteProviderBase
     {
-        public bool GetResponseCalled { get; private set; }
-
         protected override StandardResponseBase GetResponse(StandardRequestBase standardRequest)
         {
-            this.GetResponseCalled = true;
             var request = (QuoteRequestStub)standardRequest;
-            return request?.ForcedResponse;
+            return request.ForcedResponse;
         }
     }
 }

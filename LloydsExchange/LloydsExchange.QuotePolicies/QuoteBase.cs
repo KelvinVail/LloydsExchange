@@ -13,6 +13,12 @@
 
         public DateTime ExpiryDateUtc { get; protected set; }
 
+        public bool Expired => this.ExpiryDateUtc < DateTime.Today;
+
+        public void Reject()
+        {
+        }
+
         protected void Validate()
         {
             ValidateCurrency(this.Premium, nameof(this.Premium));
